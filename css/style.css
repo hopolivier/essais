@@ -1,0 +1,26 @@
+/* style sheet */
+@import url("components/banner.css");
+
+ol:hover {
+  color: red;
+}
+
+.blul:hover {
+  color: blue;
+}
+
+ol > li:hover {
+  color: yellow;
+}
+
+.blul > li:hover {
+  color: purple;
+}
+
+ul.blul {
+  font-style: italic;
+}
+
+
+
+
