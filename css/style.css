@@ -1,2 +1,8 @@
 /* style sheet */
 @import url('components/card.css');
+
+h1, h2 {
+  color: rgba(86,61,124,.3);
+  margin-bottom: 25px;
+}
+
