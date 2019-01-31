@@ -1,0 +1,9 @@
+/* card style sheet */
+.card {
+  font-size: 50px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: blue;
+
+}
