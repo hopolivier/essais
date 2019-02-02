@@ -4,7 +4,6 @@
 /* Importing components */
 @import url("components/card.css");
 @import url("components/navbar.css");
-@import url("components/container.css");
 
 /* Importing layouts */
 @import url("layouts/map.css");
@@ -44,5 +43,4 @@ h3 {
 }
 
 .map-holder {
-  display: flex;
-}
+ }
