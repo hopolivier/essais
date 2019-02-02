@@ -21,53 +21,106 @@
 
   </head>
   <body>
-    <!-- TODO: Here goes your content! -->
-    <div class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-4 col-sm-4">
-            <h3 class="text-center">Create your account</h3>
-            <form action="#">
-              <div class="row">
-                <div class="col-xs-6">
-                  <div class="form-group">
-                    <label for="firstname">Your first name</label>
-                    <input type="text" id="firstname" class="form-control" placeholder="Bob">
-                  </div>
-                </div>
-                <div class="col-xs-6">
-                  <div class="form-group">
-                    <label for="lastname">Your last name</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Sponge">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="email">Your email</label>
-                <input type="email" id="email" class="form-control" placeholder="bob.sponge@gmail.com">
-              </div>
-              <div class="form-group">
-                <label for="password">Your password</label>
-                <input type="password" id="password" class="form-control" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-              </div>
-              <div class="form-group">
-                <label for="origin">How do you know us?</label>
-                <select id="origin" class="form-control">
-                  <option value="Facebook">Facebook</option>
-                  <option value="Twitter">Twitter</option>
-                  <option value="Other people">Other people</option>
-                  <option value="Net forum">Net forum</option>
-                </select>
-              </div>
-              <input type="submit" value="Sign up" class="btn btn-primary btn-lg btn-block">
-            </form>
+    <div class="navbar-minimalist">
+      <img src="images/logo.png">
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-4 col-sm-5 col-md-8">
+          <div class="list-of-cards">
+            <div class="card" style="background-image: url(images/rio.jpg)">Rio
+            </div>
+            <div class="card" style="background-image: url(images/berlin.jpg)">
+              Berlin
+            </div>
+            <div class="card" style="background-image: url(images/shanghai.jpg)">
+              Shanghai
+            </div>
+            <div class="card" style="background-image: url(images/barcelona.jpg)">
+              Barcelona
+            </div>
+            <div class="card" style="background-image: url(images/rio.jpg)">Rio
+            </div>
+            <div class="card" style="background-image: url(images/berlin.jpg)">
+              Berlin
+            </div>
+            <div class="card" style="background-image: url(images/shanghai.jpg)">
+              Shanghai
+            </div>
+            <div class="card" style="background-image: url(images/barcelona.jpg)">
+              Barcelona
+            </div>
+            <div class="card" style="background-image: url(images/rio.jpg)">Rio
+            </div>
+            <div class="card" style="background-image: url(images/berlin.jpg)">
+              Berlin
+            </div>
+            <div class="card" style="background-image: url(images/shanghai.jpg)">
+              Shanghai
+            </div>
+            <div class="card" style="background-image: url(images/barcelona.jpg)">
+              Barcelona
+            </div>
+            <div class="card" style="background-image: url(images/rio.jpg)">Rio
+            </div>
+            <div class="card" style="background-image: url(images/berlin.jpg)">
+              Berlin
+            </div>
+            <div class="card" style="background-image: url(images/shanghai.jpg)">
+              Shanghai
+            </div>
+            <div class="card" style="background-image: url(images/barcelona.jpg)">
+              Barcelona
+            </div>
+            <div class="card" style="background-image: url(images/rio.jpg)">Rio
+            </div>
+            <div class="card" style="background-image: url(images/berlin.jpg)">
+              Berlin
+            </div>
+            <div class="card" style="background-image: url(images/shanghai.jpg)">
+              Shanghai
+            </div>
+            <div class="card" style="background-image: url(images/barcelona.jpg)">
+              Barcelona
+            </div>
+            <div class="card" style="background-image: url(images/rio.jpg)">Rio
+            </div>
+            <div class="card" style="background-image: url(images/berlin.jpg)">
+              Berlin
+            </div>
+            <div class="card" style="background-image: url(images/shanghai.jpg)">
+              Shanghai
+            </div>
+            <div class="card" style="background-image: url(images/barcelona.jpg)">
+              Barcelona
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-7 col-md-4">
+          <div class="map-holder">
+            <div id="map"></div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Gmaps js: building the map -->
+    <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 52.5206, lng: 13.4098},
+          scrollwheel: false,
+          zoom: 8
+        });
+      }
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Gmaps JavaScript -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzER7O10ZOUp7FloJzMe2r8X1GIQhgt7Q&callback=initMap">
+    </script>
   </body>
 </html>
