@@ -31,16 +31,68 @@ h2 {
 h3 {
   font-size: 23px;
 }
-.padded {
+/*.padded {
   padding: 30px 0;
 }
+*/
 
-.list-of-cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+.cards-and-map-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
-.map-holder {
+
+
+.list-of-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+/*  flex: 1 1;
+*/}
+
+#map-holder {
+  height: 100vh;
+  position: sticky;
+  top: 0;
  }
+
+/*Media Queries*/
+
+/*Smallest device*/
+@media (min-width: 10px) and (max-width: 768px) {
+  .list-of-cards {
+    grid-template-columns: 1fr;
+  }
+  .cards-and-map-container {
+  grid-template-columns: 1fr 2fr;
+  }
+/*  #map {
+    display: none;
+  }*/
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 768px) {
+  .list-of-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards-and-map-container {
+  grid-template-columns: 1fr 2fr;
+  }
+/*  #map {
+    display: none;
+  }
+}*/
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 992px) {
+  .list-of-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cards-and-map-container {
+  grid-template-columns: 2fr 1fr;
+  }
+/*  #map {
+    display: block;
+  }*/
+}
