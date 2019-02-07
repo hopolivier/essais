@@ -1,0 +1,71 @@
+ol:hover {
+  color: red;
+}
+
+.blul:hover {
+  color: blue;
+}
+
+ol > li:hover {
+  color: yellow;
+}
+
+.blul > li:hover {
+  color: purple;
+}
+
+ul.blul {
+  font-style: italic;
+}
+
+h1.banner {
+  font-style: italic;
+}
+
+.banner {
+  background-image: url("https://picsum.photos/1000/700");
+  padding: 200px 0;
+  background-size: cover;
+}
+
+@media (min-width: 320px) {
+    .container {
+        width: 300px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 650px
+    }
+}
+
+hr {
+  color: midnightblue;
+  margin-left: 0;
+  size: 40;
+}
+
+#line200 {
+  width: 200px;
+}
+
+#line300 {
+  width: 300px;
+}
+
+#line400 {
+  width: 400px;
+}
+
+#line500 {
+  width: 500px;
+}
+
+#line600 {
+  width: 600px;
+}
+
+#line700 {
+  width: 700px;
+}
