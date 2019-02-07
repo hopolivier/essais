@@ -1,0 +1,27 @@
+/* style sheet */
+@import url('components/card.css');
+@import url('components/wrapper.css');
+
+h1, h2 {
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+#header{
+  padding: 40px;
+  color: #828282;
+}
+
+p {
+  font-weight: 100;
+  font-size: 16px;
+}
+
