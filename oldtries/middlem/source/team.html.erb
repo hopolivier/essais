@@ -1,0 +1,12 @@
+<!-- team html file -->
+
+<div class="container text-center padded features">
+  <ul class="list-inline text-center">
+    <% ["carottes", "pommes", "chou", "pommesdeterre"].each do |vegetable| %>
+      <li>
+        <%= image_tag "#{vegetable}.jpg", class: "avatar-bordered avatar-large" %>
+        <h3><%= vegetable.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+</div>

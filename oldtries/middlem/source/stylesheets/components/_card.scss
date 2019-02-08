@@ -1,0 +1,37 @@
+/* Card design */
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+/*  margin: 20px;
+*//*  background: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 50%);
+*/}
+
+.cards .card{
+  flex: 0 0 30%;
+}
+.card-description {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.card-category {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 30px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.card-user {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
